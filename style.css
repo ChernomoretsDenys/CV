@@ -24,6 +24,7 @@ body {
   font-size: 16px;
   color: #333;
 }
+
 /* ___________________________________________ */
 .wrapper {
   min-height: 100%;
@@ -79,6 +80,7 @@ body {
 .person__credential {
   display: flex;
 }
+
 @media (max-width: 879px) {
   .person__description {
     border-top-left-radius: 20px;
@@ -109,11 +111,13 @@ body {
     display: none;
   }
 }
-@media (max-width: 470px) { 
+
+@media (max-width: 470px) {
   .person__credential {
     flex-direction: column;
   }
 }
+
 .person__image {
   max-width: 200px;
   border-radius: 20px;
@@ -275,11 +279,28 @@ img {
   margin-top: 10px;
 }
 
-.languages__language {}
 
 .language {
   display: flex;
   justify-content: space-between;
+}
+
+.link-info {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+
+.section__image-info {
+  cursor: pointer;
+}
+
+.titles__image-info {
+  transition: transform .3s ease-in-out;
+}
+
+.section__image-info:hover .titles__image-info {
+  transform: scale(1.5);
 }
 
 .language__title {
@@ -323,4 +344,42 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   column-gap: 150px;
   row-gap: 20px;
+}
+
+.certification__html {
+  background-color: #bf965c;
+}
+
+.certifications__header-block {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+
+
+.wrapper_certification {
+  background-color: #2b343d;
+  border-radius: 20px;
+  height: 85vh;
+}
+
+.certifications__container {
+  height: inherit;
+}
+
+.certification__body {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.certification__body-item {
+  height: 60vh;
+}
+
+.certification__body-photo {
+  height: inherit;
+  border-radius: 20px;
 }
